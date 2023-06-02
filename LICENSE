@@ -2,20 +2,24 @@ MIT License
 
 Copyright (c) 2023 Nevilsoft
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+ข้อตกลงการใช้งานโค้ด
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+ข้อตกลงนี้ ("ข้อตกลง") เป็นข้อตกลงระหว่างคุณ ("ผู้ใช้") และผู้เขียนโค้ด ("ผู้เขียน") ในการใช้งานและใช้ประโยชน์จากโค้ดที่ถูกนำเสนอให้ใช้งานภายใต้ข้อตกลงนี้ โปรดอ่านและทำความเข้าใจข้อกำหนดและเงื่อนไขต่อไปนี้:
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. การให้สิทธิ์ใช้งาน: ผู้เขียนอนุญาตให้ผู้ใช้ใช้และดำเนินการกับโค้ดตามที่ระบุไว้ในใบอนุญาตที่ผู้เขียนระบุ ในขณะเดียวกันผู้เขียนสงวนสิทธิ์ในโค้ดที่ไม่ได้ระบุให้ใช้งานภายใต้ใบอนุญาตนี้
+
+2. การควบคุมและแก้ไข: ผู้ใช้ได้รับสิทธิ์ในการปรับแก้หรือปรับปรุงโค้ดตามต้องการของตนเอง เมื่อปรับแก้หรือปรับปรุงโค้ด ผู้ใช้ต้องรับผิดชอบในผลกระทบที่อาจเกิดขึ้นจากการเปลี่ยนแปลงดังกล่าว
+
+3. การจำกัดความรับผิด: ผู้เขียนไม่รับประกันความเหมาะสมหรือความพร้อมใช้งานของโค้ด ผู้ใช้ต้องใช้โค้ดที่เอาใจใส่และดำเนินการตรวจสอบความถูกต้องก่อนนำไปใช้งาน
+
+4. การเป็นเจ้าของ: ผู้ใช้ยอมรับว่าโค้ดที่นำมาใช้งานภายใต้ข้อตกลงนี้ไม่ได้ทำให้ผู้ใช้เป็นเจ้าของโค้ดดังกล่าว ผู้เขียนยังคงเป็นเจ้าของและครอบครองลิขสิทธิ์และทรัพย์สินทางปัญญาตามกฎหมายที่มีอยู่
+
+5. การให้เครดิต: ผู้ใช้ต้องระบุผู้เขียนโค้ดและแสดงเครดิตให้ถูกต้องตามข้อกำหนดในใบอนุญาตที่ผู้เขียนระบุ โดยไม่สามารถลบหรือปรับเปลี่ยนเครดิตได้โดยไม่ได้รับอนุญาตจากผู้เขียน
+
+6. การใช้ทางพาณิชย์: ผู้ใช้จะต้องซื้อและใช้งานกุญแจการใช้งานที่ระบุโดยผู้เขียนเพื่อใช้ในการใช้งานโค้ดเพื่อทางพาณิชย์ การนำโค้ดไปใช้งานทางพาณิชย์โดยไม่มีการซื้อกุญแจการใช้งานเป็นการละเมิดข้อกำหนดในใบอนุญาต
+
+7. การใช้งานอื่นๆ: ผู้ใช้ยินยอมที่จะไม่ดัดแปลงโค้ดหรือนำโค้ดไปใช้งานในผลิตภัณฑ์หรือบริการอื่นๆ โดยไม่ได้รับอนุญาตจากผู้เขียน
+
+8. ความรับผิดชอบ: ผู้ใช้ตกลงว่าจะรับผิดชอบต่อการใช้งานและผลที่เกิดจากการใช้งานโค้ด ผู้เขียนไม่รับผิดชอบต่อความเสียหายใดๆ ที่เกิดจากการใช้งานโค้ด
+
+9. การสิ้นสุด: ผู้ใช้สามารถยกเลิกการใช้งานโค้ดและข้อตกลงนี้ได้ทุกเมื่อ การยกเลิกนั้นจะทำให้ผู้ใช้ไม่มีสิทธิ์ในการใช้งานโค้ดต่อไป
