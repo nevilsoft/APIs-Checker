@@ -18,7 +18,7 @@
  * EMAIL: CONTACT@NEVILSOFT.COM
  * FACEBOOK: HTTPS://FACEBOOK.COM/NEVILSOFT
  * 
- * Version: 1.4.10.230919282
+ * Version: 1.4.10.230919281
  */
 
 class ApiChecker
@@ -28,7 +28,7 @@ class ApiChecker
     private $ApiKey = "4d3ec81204565a30877c533827c0ca1af1b2aa282651b2b7f6fcfb1a9d5a822a"; // Edit your api key
     private $Token; // don't edit
     private $BaseUrl = "https://rt20.midlery.com/api"; // don't edit
-    private $version = "1.4.10.230919282"; // don't edit
+    private $version = "1.4.10.230919281"; // don't edit
 
     /** Stage status to start server:
      * 
@@ -47,8 +47,9 @@ class ApiChecker
         if ($this->STAGE_STATUS == "dev") {
             $this->BaseUrl = "http://0.0.0.0:8080/api";
         }
-        if ($version = !$this->CheckApiVersion()["update"]) {
-            echo $version;
+        $CheckVersion = $this->CheckApiVersion();
+        if (!empty($CheckVersion["data"]["updateAvailable"])) {
+            $this->UpdateSystem($CheckVersion["data"]["updateUrl"]);
         }
     }
 
@@ -253,11 +254,9 @@ class ApiChecker
      */
     private function CheckApiVersion(): array
     {
-        $url = $this->BaseUrl . "/v1/version";
+        $url = $this->BaseUrl . "/v1/updates/check?currentVersion=" . $this->version;
         $header = array(
             'Content-Type: application/json',
-            'X-SDK-VERSION: sdk-php/' . $this->version,
-            'X-API-KEY:' . $this->ApiKey
         );
         return $this->Call("GET", $url, null, $header);
     }
@@ -265,30 +264,21 @@ class ApiChecker
     /** Coming soon, please keep an eye out for updates from us.
      *
      */
-    private function UpdateSystem()
+    private function UpdateSystem($updateUrl)
     {
-        $opts = [
-            "http" => [
-                "method" => "GET",
-                "header" => array(
-                    'X-SDK-VERSION: sdk-php/' . $this->version,
-                )
-            ]
-        ];
-        $file_url = $this->BaseUrl . '/v1/update?sdk=php';
+        $file_url = $updateUrl;
         $save_path = './checker.class.php';
-        $context = stream_context_create($opts);
-        $file_content = file_get_contents($file_url, false, $context);
+        $file_content = file_get_contents($file_url);
         if ($file_content !== false) {
             $save_result = file_put_contents($save_path, $file_content);
 
             if ($save_result !== false) {
-                echo "ดาวน์โหลดไฟล์และอัพเดทเรียบร้อยแล้ว";
+                echo "ดาวน์โหลดไฟล์และอัพเดทเรียบร้อยแล้ว\n";
             } else {
-                echo "ไม่สามารถอัพเดทไฟล์ได้";
+                echo "ไม่สามารถอัพเดทไฟล์ได้\n";
             }
         } else {
-            echo "ไม่สามารถดาวน์โหลดไฟล์ได้";
+            echo "ไม่สามารถดาวน์โหลดไฟล์ได้\n";
         }
     }
 
